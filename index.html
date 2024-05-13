@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
     <title>AI-Knitting-Pattern Generator</title>
   </head>
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="pattern-generator-form">
           <input
             type="text"
             placeholder="Enter the knitting pattern"
@@ -24,7 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="pattern">heart, stars and a flower</div>
+        <div class="pattern" id="pattern"></div>
       </main>
 
       <footer>
@@ -40,7 +41,7 @@
         <a
           href="https://ai-knitting-pattern-machine.netlify.app/"
           target="_blank"
-          >netlify.</a
+          >Netlify.</a
         >
       </footer>
     </div>
