@@ -15,19 +15,22 @@
       </header>
 
       <main>
-        <form id="pattern-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the knitting pattern"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="pattern" id="pattern"></div>
+        <div class="form-container">
+          <form id="pattern-generator-form">
+            <input
+              type="text"
+              placeholder="Write the piece of clothing and which pattern"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: Pullover with Stars</div>
+        </div>
+        <div class="pattern hidden" id="pattern"></div>
       </main>
 
       <footer>

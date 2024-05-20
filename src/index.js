@@ -16,6 +16,10 @@ function generatePattern(event) {
   let prompt = `User instructions: Generate a knitting pattern about ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let patternElement = document.querySelector("#pattern");
+  patternElement.classList.remove("hidden");
+  patternElement.innerHTML = `<div class= "generating"> 🧶Generating a Knitting Pattern about ${instructionsInput.value}</div>`;
+
   axios.get(apiURL).then(displayPattern);
 }
 
