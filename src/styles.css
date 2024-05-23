@@ -84,12 +84,12 @@ footer {
 }
 
 .generating {
-  animation: blink-animation 1s steps (5, start) infinite;
+  animation: blinker 1s steps (5, start) infinite;
 }
 
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
+@keyframes blinker {
+  50% {
+    opacity: 0;
   }
 }
 
